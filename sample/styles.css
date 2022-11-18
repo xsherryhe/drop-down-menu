@@ -1,0 +1,27 @@
+.menu-one {
+  margin: 1rem;
+  max-width: 20rem;
+}
+
+.menu-one > * {
+  background-color: gray;
+  padding: 0.25rem 0.5rem 0.25rem;
+  }
+  
+.menu-one > *:first-child {
+  padding: 0.5rem;
+}
+
+.menu-one > *:nth-child(2) {
+  padding-top: 0;
+}
+
+.menu-one > *:last-child {
+  padding-bottom: 0.5rem;
+}
+
+.menu-heading, .menu-item {
+  background-color: lightgray;
+  padding: 0.5rem;
+  text-align: center;
+}
