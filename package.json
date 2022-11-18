@@ -1,6 +1,6 @@
 {
   "name": "@xsherryhe/drop-down-menu",
-  "version": "3.0.0",
+  "version": "3.1.0",
   "description": "A module that transforms DOM elements into a dropdown menu.",
   "main": "drop-down-menu.js",
   "scripts": {

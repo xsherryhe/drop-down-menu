@@ -39,5 +39,5 @@ export default function dropDownMenu(menu) {
       slideDownMenuItems(menu);
     });
   }
-  menu.addEventListener('click', toggleMenuItems);
+  menuHeading.addEventListener('click', toggleMenuItems);
 }

@@ -10,15 +10,11 @@
   overflow: hidden;
   position: absolute;
   top: 0;
+  z-index: 1;
 }
 
 .dropdown-menu-heading, .dropdown-menu-item {
   cursor: pointer;
-}
-
-.dropdown-menu-heading {
-  position: relative;
-  z-index: 1;
 }
 
 .dropdown-menu-item {
