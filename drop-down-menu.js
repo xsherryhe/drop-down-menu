@@ -3,6 +3,11 @@ export default function dropDownMenu(menu) {
   const [menuHeading, ...menuItems] = menu.children;
   menuHeading.classList.add('dropdown-menu-heading');
 
+  const menuItemsContainer = document.createElement('div');
+  menuItemsContainer.classList.add('dropdown-menu-item-container');
+  menuItemsContainer.append(...menuItems);
+  menu.append(menuItemsContainer);
+
   menuItems.forEach((menuItem) => {
     menuItem.classList.add('dropdown-menu-item');
   });
@@ -10,10 +15,10 @@ export default function dropDownMenu(menu) {
   function slideUpMenuItems(targetMenu) {
     targetMenu
       .querySelectorAll('.dropdown-menu-item:not(.dropped-down)')
-      .forEach((menuItem, i) => {
+      .forEach((menuItem) => {
         menuItem.setAttribute(
           'style',
-          `transform: translateY(-${(i + 1) * 100}%);`
+          `transform: translateY(-${menuItemsContainer.offsetHeight}px);`
         );
       });
   }

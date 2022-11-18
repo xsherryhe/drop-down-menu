@@ -1,18 +1,16 @@
 .menu-one {
-  max-width: 20rem;
+  width: max-content;
+}
+
+.menu-one-heading, .menu-one-item {
+  width: 20rem;
+  background-color: lightgray;
+  border: solid 5px gray;
+  margin: 0.5rem;
+  padding: 0.5rem;
+  text-align: center;
 }
 
 .menu-one-heading {
   margin: 0.5rem 0.5rem 0;
 }
-
-.menu-one-item {
-  margin: 0.5rem;
-}
-
-.menu-one-heading, .menu-one-item {
-  background-color: lightgray;
-  border: solid 5px gray;
-  padding: 0.5rem;
-  text-align: center;
-  }

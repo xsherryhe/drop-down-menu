@@ -15,7 +15,7 @@ function dropDownMenu(menu) {
   function slideUpMenuItems(targetMenu) {
     targetMenu
       .querySelectorAll('.dropdown-menu-item:not(.dropped-down)')
-      .forEach((menuItem, i) => {
+      .forEach((menuItem) => {
         menuItem.setAttribute(
           'style',
           `transform: translateY(-${menuItemsContainer.offsetHeight}px);`
