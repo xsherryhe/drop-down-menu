@@ -1,3 +1,5 @@
+This repository holds a custom npm package for creating a dropdown menu from DOM elements.
+
 To use this package:
 1) Use the dropDownMenu function by adding the following line at the top level of your code:
   `import dropDownMenu from 'drop-down-menu';`
