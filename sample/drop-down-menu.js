@@ -3,6 +3,11 @@ function dropDownMenu(menu) {
   const [menuHeading, ...menuItems] = menu.children;
   menuHeading.classList.add('dropdown-menu-heading');
 
+  const menuItemsContainer = document.createElement('div');
+  menuItemsContainer.classList.add('dropdown-menu-item-container');
+  menuItemsContainer.append(...menuItems);
+  menu.append(menuItemsContainer);
+
   menuItems.forEach((menuItem) => {
     menuItem.classList.add('dropdown-menu-item');
   });
@@ -13,7 +18,7 @@ function dropDownMenu(menu) {
       .forEach((menuItem, i) => {
         menuItem.setAttribute(
           'style',
-          `transform: translateY(-${(i + 1) * 100}%);`
+          `transform: translateY(-${menuItemsContainer.offsetHeight}px);`
         );
       });
   }

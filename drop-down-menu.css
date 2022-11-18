@@ -1,3 +1,9 @@
+.dropdown-menu-item-container {
+  padding-top: 0;
+  margin-top: 0;
+  overflow: hidden;
+}
+
 .dropdown-menu-heading, .dropdown-menu-item {
   cursor: pointer;
 }
@@ -8,9 +14,5 @@
 }
 
 .dropdown-menu-item {
-  transition: transform 300ms ease-in-out, opacity 300ms ease-in-out;
-}
-
-.dropdown-menu-item:not(.dropped-down) {
-  opacity: 0;
+  transition: transform 300ms ease-in-out;
 }
