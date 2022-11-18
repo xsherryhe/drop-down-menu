@@ -1,5 +1,5 @@
 {
-  "name": "drop-down-menu",
+  "name": "@xsherryhe/drop-down-menu",
   "version": "1.0.0",
   "description": "A module that transforms DOM elements into a dropdown menu.",
   "main": "drop-down-menu.js",
