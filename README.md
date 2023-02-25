@@ -1,4 +1,10 @@
+# Dropdown Menu
+
+## Introduction
+
 This repository holds a custom npm package for creating a dropdown menu from DOM elements.
+
+## Instructions
 
 To install this package:
 `npm install @xsherryhe/drop-down-menu`
